@@ -2444,10 +2444,7 @@ wonder_aztec_pyramid = {
 	}
 	active = {
 		ROOT = {
-			OR = {
-				religion = aztec_reformed
-				religion = aztec
-			}
+			religion_group = old_ones_group
 		}
 	}
 	flags = {
