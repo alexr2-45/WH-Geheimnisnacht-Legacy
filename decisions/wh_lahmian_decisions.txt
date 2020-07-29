@@ -205,25 +205,27 @@ send_on_recruitment_mission = {
 }
 
 establish_lahmian_presence = {
-	ai_target_filter = spouse ##only players use this mechanic, since filter all is too CPU intensive. AI will use other mechanics
+	
+	ai_target_filter = none
+	
 	from_potential = {
 		ai = no
 		trait = vampire_lahmian_visible
 		trait = lahmian_queen
-		}
+	}
 
 	potential = {
 		higher_tier_than = BARON
 		is_within_diplo_range = FROM
 		religion_group = old_world_group
 		trait = creature_human
-		location = {
-		NOT = { has_province_modifier = lahmian_presence }
-		}
 	}
 
 	allow = {
 		FROM = { wealth = 100 }
+		any_demesne_province = {
+			NOT = { has_province_modifier = lahmian_presence }
+		}
 	}
 
 	effect = {
