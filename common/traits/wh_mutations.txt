@@ -1,0 +1,587 @@
+mutation_minor = {
+	customizer = yes
+}
+mutation_major = {
+	customizer = yes
+}
+mutation_massive = {
+	customizer = yes
+}
+
+mut_spines = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		#mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_horns = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		#mut_horns
+		mut_spines
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_DEMONIC
+	female_insult_adj = INSULT_DEMONIC
+}
+
+mut_scales = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		#mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	combat_rating = 5
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_thirdeye = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		mut_scales
+		#mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	combat_rating = 5
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_tongue = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = { mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		#mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	combat_rating = 5
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_WORMTONGUE
+	female_insult = INSULT_WORMTONGUE
+	male_insult_adj = INSULT_SLITHERING
+	female_insult_adj = INSULT_SLITHERING
+}
+
+mut_crests = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		#mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_doublehead = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = { mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		#mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	diplomacy = 1
+	intrigue = 1
+	learning = 1
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -50
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_beak = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		#mut_beak
+		mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	combat_rating = 8
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -20
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+mut_teeth = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = { mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		#mut_teeth
+		mut_eyes
+		mut_bigeyes
+	}
+	combat_rating = 10
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -10
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_eyes = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		#mut_eyes
+		mut_bigeyes
+	}
+	intrigue = 2
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -30
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}
+
+mut_bigeyes = {
+	potential = {
+		NOR = {
+			religion = hashut
+			religion_group = dwarf_gods_group
+			religion_group = cadai_group
+			religion_group = cytharai_group
+			culture_group = forest_group
+			culture_group = goblin_group
+			culture_group = orc_group
+			culture_group = lizardman_group
+			culture_group = monstrous_group
+			culture_group = nehekharan_group
+			trait = vampire_carstein_visible
+			trait = vampire_blood_visible
+			trait = vampire_strigoi_visible
+			trait = vampire_necrarch_visible
+			trait = vampire_jade_visible
+			trait = vampire_mahtmasi_visible
+			trait = vampire_lahmian_visible
+			trait = vampire_carstein_hidden
+			trait = vampire_blood_hidden
+			trait = vampire_strigoi_hidden
+			trait = vampire_necrarch_hidden
+			trait = vampire_jade_hidden
+			trait = vampire_mahtmasi_hidden
+			trait = vampire_lahmian_hidden
+		}
+	}
+	opposites = {
+		mut_spines
+		mut_horns
+		mut_scales
+		mut_thirdeye
+		mut_tongue
+		mut_crests
+		mut_doublehead
+		mut_beak
+		mut_teeth
+		mut_eyes
+		#mut_bigeyes
+	}
+	intrigue = 2
+	same_opinion = 5
+	opposite_opinion = 5
+	customizer = yes
+	ai_rationality = -30
+	male_insult = INSULT_MONSTER
+	female_insult = INSULT_MONSTER
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+}

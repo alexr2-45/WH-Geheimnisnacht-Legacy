@@ -1,0 +1,757 @@
+decisions = {
+	employ_chancellor = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			if = {
+				limit = {
+					NOT = { culture_group = amazon_group }
+				}
+				create_character = {
+					random_traits = yes
+					age = random
+					dynasty = random
+					culture = ROOT
+					religion = ROOT
+					female = no
+				}
+			}
+			if = {
+				limit = {
+					culture_group = amazon_group
+				}
+				create_character = {
+					random_traits = yes
+					age = random
+					dynasty = random
+					culture = ROOT
+					religion = ROOT
+					female = yes
+				}
+			}
+			hidden_tooltip = {
+				new_character = {
+					remove_education_trait = yes
+					random_list = {
+						10 = {
+							add_trait = naive_appeaser
+						}
+						40 = {
+							add_trait = underhanded_rogue
+						}
+						40 = {
+							add_trait = charismatic_negotiator
+						}
+						10 = {
+							add_trait = grey_eminence
+						}
+					}
+					random_list = {
+						35 = {
+							# Nothing
+						}
+						15 = {
+							change_diplomacy = 2
+						}
+						10 = {
+							add_trait = game_master
+						}
+						10 = {
+							add_trait = socialiser
+						}
+						10 = {
+							add_trait = gregarious
+						}
+						5 = {
+							add_trait = hedonist
+						}
+						5 = {
+							change_diplomacy = 4
+						}
+						5 = {
+							add_trait = shrewd
+						}
+					}
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	employ_steward = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			if = {
+				limit = {
+					NOT = { culture_group = amazon_group }
+				}
+				create_random_steward = {
+					random_traits = yes
+					dynasty = random
+					female = no
+					age = random
+				}
+			}
+			if = {
+				limit = {
+					culture_group = amazon_group
+				}
+				create_random_steward = {
+					random_traits = yes
+					dynasty = random
+					female = yes
+					age = random
+				}
+			}
+			hidden_tooltip = {
+				new_character = {
+					random_list = {
+						35 = {
+							# Nothing
+						}
+						15 = {
+							change_stewardship = 2
+						}
+						10 = {
+							add_trait = architect
+						}
+						10 = {
+							add_trait = administrator
+						}
+						10 = {
+							add_trait = just
+						}
+						5 = {
+							add_trait = gardener
+						}
+						5 = {
+							change_stewardship = 4
+						}
+						5 = {
+							add_trait = shrewd
+						}
+					}
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	employ_spymaster = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			if = {
+				limit = {
+					NOT = { culture_group = amazon_group }
+				}
+				create_character = {
+					random_traits = yes
+					age = random
+					dynasty = random
+					culture = ROOT
+					religion = ROOT
+					female = no
+				}
+			}
+			if = {
+				limit = {
+					culture_group = amazon_group
+				}
+				create_character = {
+					random_traits = yes
+					age = random
+					dynasty = random
+					culture = ROOT
+					religion = ROOT
+					female = yes
+				}
+			}
+			hidden_tooltip = {
+				new_character = {
+					remove_education_trait = yes
+					random_list = {
+						10 = {
+							add_trait = amateurish_plotter
+						}
+						40 = {
+							add_trait = flamboyant_schemer
+						}
+						40 = {
+							add_trait = intricate_webweaver
+						}
+						10 = {
+							add_trait = elusive_shadow
+						}
+					}
+					random_list = {
+						35 = {
+							# Nothing
+						}
+						15 = {
+							change_intrigue = 2
+						}
+						10 = {
+							add_trait = torturer
+						}
+						10 = {
+							add_trait = master_seducer
+						}
+						10 = {
+							add_trait = deceitful
+						}
+						5 = {
+							add_trait = master_schemer
+						}
+						5 = {
+							change_intrigue = 4
+						}
+						5 = {
+							add_trait = shrewd
+						}
+					}
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+		present_noble = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				female = no
+				age = random
+			}
+			hidden_tooltip = {
+				new_character = {
+					set_character_flag = debutante
+					save_event_target_as = invited_character
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	summon_tomb_king = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			trait = creature_nehekharan
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			create_random_steward = {
+				random_traits = yes
+				dynasty = random
+				age = random
+				female = 33
+			}
+			hidden_tooltip = {
+				new_character = {
+					remove_education_trait = yes
+					add_trait = creature_nehekharan
+					add_trait = khemri_tomb_king
+					add_age = 100
+					random_list = {
+						20 = {
+							random_list = {
+								25 = {
+									add_trait = amateurish_plotter
+								}
+								25 = {
+									add_trait = flamboyant_schemer
+								}
+								25 = {
+									add_trait = intricate_webweaver
+								}
+								25 = {
+									add_trait = elusive_shadow
+								}
+							}
+						}
+						20 = {
+							random_list = {
+								25 = {
+									add_trait = naive_appeaser
+								}
+								25 = {
+									add_trait = underhanded_rogue
+								}
+								25 = {
+									add_trait = charismatic_negotiator
+								}
+								25 = {
+									add_trait = grey_eminence
+								}
+							}
+						}
+						20 = {
+							random_list = {
+								25 = {
+									add_trait = indulgent_wastrel
+								}
+								25 = {
+									add_trait = thrifty_clerk
+								}
+								25 = {
+									add_trait = fortune_builder
+								}
+								25 = {
+									add_trait = midas_touched
+								}
+							}
+						}
+						20 = {
+							random_list = {
+								25 = {
+									add_trait = misguided_warrior
+								}
+								25 = {
+									add_trait = tough_soldier
+								}
+								25 = {
+									add_trait = skilled_tactician
+								}
+								25 = {
+									add_trait = brilliant_strategist
+								}
+							}
+						}
+						20 = {
+							random_list = {
+								25 = {
+									add_trait = detached_priest
+								}
+								25 = {
+									add_trait = martial_cleric
+								}
+								25 = {
+									add_trait = scholarly_theologian
+								}
+								25 = {
+									add_trait = mastermind_theologian
+								}
+							}
+						}
+					}
+
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	
+	employ_soldier = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			prestige = 25
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			prestige = -25
+			scaled_wealth = -0.25
+			if = {
+				limit = {
+				    NOR = {
+						culture_group = lizardman_group
+						culture_group = amazon_group
+						trait = creature_elf
+						trait = creature_dwarf
+					}
+				}
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = none
+					female = no
+					age = random
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						culture_group = lizardman_group
+						culture_group = amazon_group
+					}
+				}
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = none
+					female = yes
+					age = 16
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						trait = creature_dwarf
+						trait = creature_elf
+					}
+				}
+				create_random_soldier = {
+					random_traits = yes
+					dynasty = none
+					female = no
+					age = 120
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { any_owned_bloodline = { has_bloodline_flag = bloodline_inspire_commanders } }
+					random_list = {
+						95 = {
+							spawn_great_commander_effect = yes
+						}
+						5 = {
+							spawn_fantastic_commander_effect = yes
+							new_character = {
+								opinion = {
+			 						modifier = opinion_legendary_commander
+			 						years = 50
+			 		  				who = ROOT
+			 					}
+							}
+						}
+					}
+				}
+				else = {
+					spawn_good_commander_effect = yes
+				}
+			}
+
+			hidden_tooltip = {
+				new_character = {
+					random_list = {
+						35 = {
+							# Nothing
+						}
+						15 = {
+							change_martial = 2
+						}
+						10 = {
+							add_trait = robust
+						}
+						10 = {
+							add_trait = duelist
+						}
+						10 = {
+							add_trait = hunter
+						}
+						5 = {
+							add_trait = strategist
+						}
+						5 = {
+							change_martial = 4
+						}
+						5 = {
+							if = {
+								limit = {
+									has_dlc = "Reapers"
+								}
+								add_trait = one_eyed
+							}
+						}
+						5 = {
+							add_trait = shrewd
+						}
+					}
+					set_character_flag = invited_soldier
+					save_event_target_as = invited_character
+				}
+			}
+			custom_tooltip = { text = promoted_commander_TT }
+			character_event = { id = NE.1 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	employ_priest = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			piety = 25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			piety = -25
+			if = {
+				limit = {
+					religion_allows_female_temple_holders = no
+				}
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					female = no
+					age = random
+				}
+			}
+			if = {
+				limit = {
+					religion_allows_female_temple_holders = yes
+					NOT = { religion = amazon }
+				}
+				random_list = {
+					50 = {
+						create_random_priest = {
+							random_traits = yes
+							dynasty = random
+							female = no
+							age = random
+						}
+					}
+					50 = {
+						create_random_priest = {
+							random_traits = yes
+							dynasty = random
+							female = yes
+							age = random
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = amazon
+				}
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					female = yes
+					age = random
+				}
+			}
+			hidden_tooltip = {
+				new_character = {
+					random_list = {
+						35 = {
+							# Nothing
+						}
+						15 = {
+							change_learning = 2
+						}
+						10 = {
+							add_trait = erudite
+						}
+						10 = {
+							add_trait = scholar
+						}
+						10 = {
+							add_trait = mystic
+						}
+						5 = {
+							add_trait = renowned_physician
+						}
+						5 = {
+							change_learning = 4
+						}
+						5 = {
+							add_trait = shrewd
+						}
+					}
+				}
+				character_event = { id = NE.1 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	present_debutante = {
+		ai = no
+		only_playable = yes
+
+		potential = {
+			NOR = {
+				graphical_culture = treemangfx
+				graphical_culture = chaosspawngfx
+				graphical_culture = daemonettegfx
+				graphical_culture = bloodlettergfx
+				graphical_culture = plaguebearergfx
+				graphical_culture = flamergfx
+				culture_group = skaven_group
+				culture_group = fimir_group
+				trait = witch_hunter
+				trait = vampire_blood_visible
+				trait = vampire_jade_visible
+			}
+		}
+		allow = {
+			scaled_wealth = 0.25
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			scaled_wealth = -0.25
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				female = yes
+				age = random
+			}
+			new_character = {
+				set_character_flag = debutante
+				save_event_target_as = invited_character
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
