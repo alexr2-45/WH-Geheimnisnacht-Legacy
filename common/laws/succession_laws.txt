@@ -2269,7 +2269,7 @@ gender_laws = {
 			}
 				custom_tooltip = {
 					text = "Is not a known vampire"
-					NOT = { is_vampire_visible_trigger = { YES } }
+					NOT = { is_vampire_visible_trigger = yes }
 				}
 				OR = {
 					has_law = enatic_succession
