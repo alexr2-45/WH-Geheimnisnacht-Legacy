@@ -1,0 +1,12 @@
+
+# File for traits added between major releases.
+#
+# Adding new traits in earlier files can break existing savegames, since
+# traits are tracked by their index and adding one in the middle offsets all
+# the ones after.
+#
+# The traits in here should be moved to their proper place only on new major
+# releases where savegame compatibility is not guaranteed.
+
+crafting_magic_item = {}
+
