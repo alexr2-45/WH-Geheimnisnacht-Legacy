@@ -115,7 +115,7 @@ namespace = vampire
 					trait = leper
 					 }
 				modifier = { factor = 5
-					trait = elixir_of_eternal_youth
+					trait = immortal
 					 }
 				modifier = { factor = 0.01
 					any_lover = { character = FROMFROM }
@@ -251,7 +251,7 @@ namespace = vampire
 					NOT = { age = 50 }
 					 }
 				modifier = { factor = 5
-					trait = elixir_of_eternal_youth
+					trait = immortal
 					 }
 				modifier = { factor = 0.01
 					any_lover = { character = FROMFROM }

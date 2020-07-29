@@ -2749,9 +2749,6 @@ character_event = {
 				modifier = { factor = 10
 						trait = immortal
 						}
-				modifier = { factor = 3
-						trait = elixir_of_eternal_youth
-						}
 					modifier = {
 						factor = 1.75
 						trait = champion_tzeentch

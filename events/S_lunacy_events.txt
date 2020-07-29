@@ -1482,9 +1482,6 @@ character_event = {
         			modifier = { factor = 0.75
 						trait = immortal
 						}
-        			modifier = { factor = 0.75
-						trait = elixir_of_eternal_youth
-						}
 				}
 
 	option = {
@@ -1530,9 +1527,6 @@ character_event = {
 	mean_time_to_happen = { years = 10
         			modifier = { factor = 0.75
 						trait = immortal
-						}
-        			modifier = { factor = 0.75
-						trait = elixir_of_eternal_youth
 						}
 				}
 

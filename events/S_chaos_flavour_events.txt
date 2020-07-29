@@ -527,11 +527,11 @@ character_event = {
 			# 				modifier = { factor = 1.5
 			# 					event_target:combatant_1 = { age = 150
 			# 									OR = { trait = prince_khorne
-			# 										trait = elixir_of_eternal_youth } }
+			# 										trait = immortal } }
 			# 					 }
 			# 				modifier = { factor = 0.5
 			# 					event_target:combatant_1 = { age = 40
-			# 									NOT = { trait = elixir_of_eternal_youth }
+			# 									NOT = { trait = immortal }
 			# 									NOT = { trait = prince_khorne } }
 			# 					 }
 			# 				modifier = { factor = 0.95
@@ -786,11 +786,11 @@ character_event = {
 			# 				modifier = { factor = 1.5
 			# 					event_target:combatant_2 = { age = 150
 			# 									OR = { trait = prince_khorne
-			# 										trait = elixir_of_eternal_youth } }
+			# 										trait = immortal } }
 			# 					 }
 			# 				modifier = { factor = 0.5
 			# 					event_target:combatant_2 = { age = 40
-			# 									NOT = { trait = elixir_of_eternal_youth }
+			# 									NOT = { trait = immortal }
 			# 									NOT = { trait = prince_khorne } }
 			# 					 }
 			# 				modifier = { factor = 0.95
