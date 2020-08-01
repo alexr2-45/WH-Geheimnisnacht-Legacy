@@ -1,7 +1,7 @@
 ##############################
 decisions = {
     distribute_runefangs = {
-		only_rulers = yes
+		only_independent = yes
 		ai_check_interval = 6
 	    potential = {
 	        tier = EMPEROR

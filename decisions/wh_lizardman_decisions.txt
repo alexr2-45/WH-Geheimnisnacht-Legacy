@@ -333,10 +333,12 @@ decisions = {
 
 settlement_decisions = {
 	cutback_jungle_decision = {
-			filter = realm_owned
-			ai_target_filter = owned
+		ai = no # Handled by event
+		filter = realm_owned
+		ai_target_filter = owned
+		only_playable = yes
+		
 		from_potential = {
-			ai = no # Handled by event
 		}
 
 		potential = {

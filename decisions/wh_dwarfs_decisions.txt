@@ -163,10 +163,10 @@ decisions = {
 		}
 	}
 	open_book_of_grudges = {
+		ai = no
 		is_high_prio = yes
 		only_rulers = yes
 		potential = {
-			ai = no
 			religion_group = dwarf_gods_group
 			trait = creature_dwarf
 		}

@@ -3,9 +3,10 @@
 
 targetted_decisions = {
 commission_crafting = {
-		ai_check_interval = 24
-        ai_target_filter = home_court
+        ai_check_interval = 24
         filter = sub_realm
+        ai_target_filter = home_court
+        only_playable = yes
         potential = {
                 NOT = { trait = vampire_necrarch_visible }
                 NOT = { character = FROM }

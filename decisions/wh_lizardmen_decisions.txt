@@ -3,7 +3,7 @@ decisions = {
 	awaken_slann = {
 		ai_check_interval = 12
 		is_high_prio = yes
-		only_rulers = yes
+		only_independent = yes
 		potential = { ai = no
 			trait = creature_skink
 			is_ruler = yes
@@ -41,7 +41,7 @@ decisions = {
 	amazon_brawling_tournament = {
 		ai_check_interval = 3
 		is_high_prio = yes
-		only_rulers = yes
+		only_playable = yes
 		potential = {
 			trait = creature_amazon
 			higher_tier_than = COUNT
@@ -180,7 +180,7 @@ decisions = {
 	search_youth_fountain = {
 		ai_check_interval = 36
 		is_high_prio = yes
-		only_rulers = yes
+		only_playable = yes
 		potential = {
 			OR = { trait = creature_amazon
 				trait = creature_skink
@@ -281,11 +281,10 @@ targetted_decisions = {
 	} #decision
 
 	give_province_amazon_1 = {
-		ai_check_interval = 12
+		ai = no
 		filter = realm
 		ai_target_filter = self
 		from_potential = {
-			ai = no
 			trait = creature_amazon
 			NOT = { trait = incapable }
 			is_ruler = yes
@@ -375,7 +374,10 @@ targetted_decisions = {
 	#Decision to eat prisoners for the Miyan
 	eat_prisoner_miyan = {
 		ai_check_interval = 6
+		filter = court
+		ai_target_filter = court
 		only_rulers = yes
+
 		from_potential = {
 			religion = kukaili
 			primary_title = { higher_tier_than = BARON }
@@ -509,6 +511,7 @@ title_decisions = {
 		ai_check_interval = 12
 		filter = owned
 		ai_target_filter = owned
+		only_playable = yes
 
 		potential = {
 			can_be_given_away = yes
@@ -556,6 +559,7 @@ title_decisions = {
 		ai_check_interval = 6
 		filter = owned
 		ai_target_filter = owned
+		only_playable = yes
 
 		potential = {
 			can_be_given_away = yes
@@ -666,6 +670,7 @@ title_decisions = {
 		ai_check_interval = 6
 		filter = owned
 		ai_target_filter = owned
+		only_playable = yes
 
 		potential = {
 			can_be_given_away = yes
@@ -777,6 +782,7 @@ plot_decisions = {
 	faction_misaligned_chief_ultimatum = {
 		ai_check_interval = 12
 		is_high_prio = yes
+		only_playable = yes
 
 		potential = {
 			leads_faction = faction_misaligned_chief
@@ -887,6 +893,7 @@ plot_decisions = {
 	faction_complacent_queen_ultimatum = {
 		ai_check_interval = 12
 		is_high_prio = yes
+		only_playable = yes
 
 		potential = {
 			leads_faction = faction_complacent_queen

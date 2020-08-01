@@ -163,6 +163,7 @@ decisions = {
 	consume_warpstone = {
 		is_high_prio = yes
 		ai_check_interval = 4
+		only_playable = yes
 
 		potential = {
 			custom_tooltip = {

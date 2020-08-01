@@ -1,21 +1,24 @@
 decisions = {
     passing_asuryan = {
-		ai_check_interval = 12
-		only_rulers = yes
-		is_high_prio = yes
+        ai_check_interval = 12
+        only_playable = yes
+        is_high_prio = yes
+
         potential = {
-	trait = creature_elf
-        is_ruler = yes
-        prisoner = no
-	is_female = no
-	age = 12
-	has_landed_title = e_ulthuan
-	NOT = { religion = asrai_cadai }
-        OR = { religion_group = cadai_group
-		religion_group = cytharai_group }
-        NOT = { trait = phoenix_king }
-        NOT = { trait = burnt_by_asuryan }
-        NOT = { has_character_flag = asuryan_crowning_flag }
+            has_landed_title = e_ulthuan
+            trait = creature_elf
+            is_ruler = yes
+            prisoner = no
+            is_female = no
+            age = 12
+            NOT = { religion = asrai_cadai }
+            OR = {
+                religion_group = cadai_group
+                religion_group = cytharai_group
+            }
+            NOT = { trait = phoenix_king }
+            NOT = { trait = burnt_by_asuryan }
+            NOT = { has_character_flag = asuryan_crowning_flag }
         }
         allow = {
 			custom_tooltip = { text = IS_NOT_INCAPACITATED
@@ -66,6 +69,7 @@ decisions = {
 	renounce_cadai = {
 		ai_check_interval = 12
 		is_high_prio = yes
+		only_playable = yes
 		potential = {
 			has_landed_title = e_ulthuan
 			religion = cadai
@@ -203,12 +207,12 @@ decisions = {
 	} #closesdecision
 	phoenix_asurpolitical_stand = {
 		ai_check_interval = 12
-		only_rulers = yes
+		only_playable = yes
 		potential = {
+			has_landed_title = e_ulthuan
 			culture_group = asur_group
 			trait = creature_elf
 			has_character_flag = elf_politics_flag
-			has_landed_title = e_ulthuan
 			capital_scope = { empire = { title = e_ulthuan } }
 			OR = { NOT = { has_character_flag = phoenixking_changedpolicy }
 					had_character_flag = { flag = phoenixking_changedpolicy
@@ -244,7 +248,6 @@ decisions = {
 
 	donate_tribute_to_ulthuan = {
 		ai_check_interval = 6
-		only_playable = yes
 		only_independent = yes
 		potential = {
 			independent = yes
@@ -309,7 +312,6 @@ decisions = {
 	}
 	plea_to_ulthuan = {
 		ai_check_interval = 3
-		only_playable = yes
 		only_independent = yes
 		potential = {
 			independent = yes

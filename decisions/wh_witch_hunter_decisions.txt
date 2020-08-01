@@ -3,6 +3,7 @@ targetted_decisions = {
 
 	denounce_master = { #To remove a Master from charge
 		ai_check_interval = 24
+		only_rulers = yes
 		filter = realm
 		ai_target_filter = realm
 		from_potential = {
@@ -467,6 +468,7 @@ targetted_decisions = {
 	} #decision
 	enlist_courtier = {
 		ai_check_interval = 12
+		only_rulers = yes
 		filter = court
 		ai_target_filter = court
 		from_potential = {
@@ -826,6 +828,7 @@ targetted_decisions = {
 		} #closes decision
 	exile_whunter = {
 		ai_check_interval = 12
+		only_rulers = yes
 		filter = court
 		ai_target_filter = court
 		from_potential = {
@@ -989,11 +992,11 @@ targetted_decisions = {
 
 	request_recruit = {
 		ai_check_interval = 12
+		ai = no	#Player only, AI by events
+		only_rulers = yes
 		filter = all
 		ai_target_filter = self
 		from_potential = {
-			ai = no	#Player only, AI by events
-
 			trait = witch_hunter
 			is_incapacitated_trigger = no
 			OR = { has_landed_title = d_witch_hunter_seat_1
@@ -1063,7 +1066,7 @@ targetted_decisions = {
 	#Recreating Holy Order Mechanics
 	templars_join_war = {
 		ai_check_interval = 6
-		ai_target_filter = all
+		ai_target_filter = independent_rulers
 		only_rulers = yes
 		from_potential = {
 			is_ruler = yes
@@ -1731,6 +1734,7 @@ targetted_decisions = {
 decisions = {
 	borrow_money_witch_hunters = {
 		ai_check_interval = 12
+		only_playable = yes
 		potential = {
 			religion = sigmarite
 			trait = creature_human
@@ -1804,6 +1808,7 @@ decisions = {
 
 	donate_money_to_witch_hunters = {
 		ai_check_interval = 12
+		only_playable = yes
 		potential = {
 			religion = sigmarite
 			trait = creature_human
@@ -1900,6 +1905,7 @@ decisions = {
 
 	expel_the_witch_hunters = {
 		ai_check_interval = 12
+		only_independent = yes
 		potential = {
 			higher_tier_than = DUKE
 			independent = yes
@@ -2040,6 +2046,7 @@ decisions = {
 	}
 	welcome_the_witch_hunters = {
 		ai_check_interval = 12
+		only_independent = yes
 		potential = {
 			higher_tier_than = DUKE
 			independent = yes
@@ -2153,7 +2160,7 @@ decisions = {
 
 	call_templars = {
 		ai_check_interval = 6
-		only_rulers = yes
+		only_playable = yes
 		potential = {
 			higher_tier_than = COUNT
 			religion_group = old_world_group
@@ -2276,11 +2283,9 @@ decisions = {
 
 settlement_decisions = {
 	request_barony = {
-		ai_check_interval = 12
+		ai = no	#Player only, AI by events
 		filter = all
-		ai_target_filter = self
 		from_potential = {
-			ai = no	#Player only, AI by events
 			trait = witch_hunter
 			NOT = { trait = incapable }
 			OR = { has_landed_title = d_witch_hunter_seat_1
@@ -2324,11 +2329,9 @@ settlement_decisions = {
 		} #closes decision
 
 	scour_barony = {
-		ai_check_interval = 12
+		ai = no	#Player only, AI by events
 		filter = all
-		ai_target_filter = self
 		from_potential = {
-			ai = no	#Player only, AI by events
 			trait = witch_hunter
 			NOT = { trait = incapable }
 			OR = { has_landed_title = d_witch_hunter_seat_1

@@ -1,6 +1,7 @@
 plot_decisions = {
 	faction_isolationist_elves_ultimatum = {
 		ai_check_interval = 6
+		only_playable = yes
 		is_high_prio = yes
 
 		potential = {
@@ -105,6 +106,7 @@ plot_decisions = {
 	}
 	faction_interventionist_elves_ultimatum = {
 		ai_check_interval = 6
+		only_playable = yes
 		is_high_prio = yes
 
 		potential = {

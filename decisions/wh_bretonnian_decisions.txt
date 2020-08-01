@@ -84,7 +84,8 @@ decisions = {
 		}
 	}
 	
-returntoyourcastle ={
+returntoyourcastle = {
+ai = no
 is_high_prio = yes
 potential = {
 age = 16
@@ -94,8 +95,6 @@ NOT = { has_character_flag = on_grail_quest }
 }
 
 allow = {
-ai = no
-
 }
 
 effect = {

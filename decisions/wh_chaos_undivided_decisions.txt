@@ -1,12 +1,11 @@
 decisions = { 
 
 	shift_to_khorne = {
-		ai_check_interval = 6
+		ai = no
 		only_playable = yes
 		icon_religion = khorne
 
 		potential = {
-			ai = no
 			is_playable = yes
 			religion = chaos
 			trait = champion_khorne
@@ -53,12 +52,11 @@ decisions = {
 	}
 
 	shift_to_nurgle = {
-		ai_check_interval = 6
+		ai = no
 		only_playable = yes
 		icon_religion = nurgle
 
 		potential = {
-			ai = no
 			is_playable = yes
 			religion = chaos
 			trait = champion_nurgle
@@ -105,12 +103,11 @@ decisions = {
 	}
 
 	shift_to_tzeentch = {
-		ai_check_interval = 6
+		ai = no
 		only_playable = yes
 		icon_religion = tzeentch
 
 		potential = {
-			ai = no
 			is_playable = yes
 			religion = chaos
 			trait = champion_tzeentch
@@ -157,12 +154,11 @@ decisions = {
 	}
 
 	shift_to_slaanesh = {
-		ai_check_interval = 6
+		ai = no
 		only_playable = yes
 		icon_religion = slaanesh
 
 		potential = {
-			ai = no
 			is_playable = yes
 			religion = chaos
 			trait = champion_slaanesh

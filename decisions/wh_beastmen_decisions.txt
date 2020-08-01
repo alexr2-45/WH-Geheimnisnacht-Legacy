@@ -439,6 +439,8 @@ decisions = {
 		}
 	}
 	beastman_slaver = {
+		ai_check_interval = 12
+		only_playable = yes
 		potential = { age = 16
 				trait = creature_beastman
 				religion_group = chaos_gods_group
@@ -462,6 +464,8 @@ decisions = {
 
 	}
 	beastman_herdstone_offering = {
+		ai_check_interval = 12
+		only_playable = yes
 		potential = { age = 16
 				trait = creature_beastman
 				religion_group = chaos_gods_group
@@ -492,6 +496,8 @@ decisions = {
 	}
 
 	beastman_baron_cleaning = {	#AI cleaning
+		ai_check_interval = 12
+		only_rulers = yes
 		potential = { trait = creature_beastman
 				tier = BARON
 				lower_tier_than = COUNT

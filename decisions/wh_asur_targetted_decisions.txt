@@ -1319,6 +1319,7 @@ targetted_decisions = {
 		ai_check_interval = 6
 		filter = court
 		ai_target_filter = court
+		only_playable = yes
 		from_potential = {
 			culture_group = asur_group
 			NOT = { religion = asrai_cadai }

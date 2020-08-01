@@ -3,6 +3,7 @@ settlement_decisions  = {
 		ai_check_interval = 3
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
+		only_playable = yes
 
 		from_potential = {
 		}
