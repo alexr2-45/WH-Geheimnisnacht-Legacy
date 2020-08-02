@@ -143,6 +143,7 @@ e_reikland = {
 		e_the_empire = { has_holder = no }
 	}
 	short_name = yes
+	assimilate = no # Rooting for the Empire title
 }
 
 e_westerland = {
@@ -160,6 +161,7 @@ e_westerland = {
 	}
 
 	short_name = yes
+	assimilate = no # Rooting for the Empire title
 }
 
 e_talabecland = {
@@ -177,6 +179,7 @@ e_talabecland = {
 	}
 
 	short_name = yes
+	assimilate = no # Rooting for the Empire title
 }
 
 e_middenland = {
@@ -194,6 +197,7 @@ e_middenland = {
 	}
 
 	short_name = yes
+	assimilate = no # Rooting for the Empire title
 }
 
 d_ambacht = {
