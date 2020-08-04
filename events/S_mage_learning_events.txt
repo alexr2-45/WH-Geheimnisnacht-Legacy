@@ -796,6 +796,8 @@ character_event = {
 
 	is_triggered_only = yes
 
+	trigger = { FROM = { is_alive = yes } }
+
 	option = { name = EVTOPTAsorcererapprentice7 #Teach caution
 		trigger = { NOT = { FROM = { check_variable = { which = "mage_teaching" value = 9 } } } }
 		hidden_tooltip = { FROM = { change_variable = { which = "mage_teaching" value = 1 }
