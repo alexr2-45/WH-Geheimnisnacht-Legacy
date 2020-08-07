@@ -741,6 +741,7 @@ lahmian_elite_agent = {
  monthly_salary = 0.05
  monthly_prestige = 1.00
 
+ attribute = intrigue
 
   allowed_to_hold = {
     	age = 16
@@ -760,7 +761,6 @@ lahmian_elite_agent = {
     }
 
     message = yes
-
 }
 
 lahmian_protector = {
@@ -769,6 +769,8 @@ lahmian_protector = {
  opinion_effect = 10
  monthly_salary = 0.05
  monthly_prestige = 1.00
+
+ attribute = martial
 
   allowed_to_hold = {
     	age = 16
