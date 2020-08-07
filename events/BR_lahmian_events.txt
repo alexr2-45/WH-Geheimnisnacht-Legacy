@@ -4047,72 +4047,74 @@ FROM = { character_event = { id = lahmia.207 } }
 
 	#Success, Lahmian Agents point of view
 	character_event = {
-	id = lahmia.206
-	desc = lahmia206desc #Through a mixture of seduction, intimidation, and just-perfectly set up circumstances, you convince your mark to accept the blood kiss and join the Lahmian sisterhood. Your queen will be very pleased...
-	picture = "GFX_vampiress1"
+		id = lahmia.206
+		desc = lahmia206desc #Through a mixture of seduction, intimidation, and just-perfectly set up circumstances, you convince your mark to accept the blood kiss and join the Lahmian sisterhood. Your queen will be very pleased...
+		picture = "GFX_evt_vampiress1"
 
-	is_triggered_only = yes
+		is_triggered_only = yes
 
-	option = {
-	name = EXCELLENT
-	prestige = 25
-	if = {
-	limit = {
-	NOT = { intrigue = 30 }
-	}
-	random_list = {
-	95 = { }
-	5 = { change_intrigue = 1 }
-	}
-	}
-	FROM = { add_trait = vampire_lahmian_visible
-		set_graphical_culture = lahmian_vampire
-					set_variable = { which = khornefavor value = 0 }
-					set_variable = { which = nurglefavor value = 0 }
-					set_variable = { which = slaaneshfavor value = 0 }
-					set_variable = { which = tzeentchfavor value = 0 }
-					set_variable = { which = "khorne_favor" value = 0 }
-					set_variable = { which = "nurgle_favor" value = 0 }
-					set_variable = { which = "slaanesh_favor" value = 0 }
-					set_variable = { which = "tzeentch_favor" value = 0 }
-					clr_character_flag = hidden_tzeentch_cultist3
-					clr_character_flag = hidden_tzeentch_cultist2
-					clr_character_flag = hidden_tzeentch_cultist
-					clr_character_flag = hidden_nurgle_cultist3
-					clr_character_flag = hidden_nurgle_cultist2
-					clr_character_flag = hidden_nurgle_cultist
-					clr_character_flag = hidden_khorne_cultist3
-					clr_character_flag = hidden_khorne_cultist2
-					clr_character_flag = hidden_khorne_cultist
-					clr_character_flag = hidden_slaanesh_cultist3
-					clr_character_flag = hidden_slaanesh_cultist2
-					clr_character_flag = hidden_slaanesh_cultist
-					clr_character_flag = hidden_undivided_cultist3
-					clr_character_flag = hidden_undivided_cultist2
-					clr_character_flag = hidden_undivided_cultist }
-	FROM = { recalc_succession = yes }
-	FROM = { religion = vampiric }
-	if = {
-	limit = { is_female = no }
-	FROM = { dynasty = ROOT }
-	FROM = { set_father = ROOT }
-	}
-	if = {
-	limit = { is_female = yes }
-	FROM = { dynasty = ROOT }
-	FROM = { set_mother = ROOT }
-	}
-	if = {
-	limit = {
-	NOT = { trait = lahmian_queen }
-	}
-	any_playable_ruler = {
-	limit = { trait = lahmian_queen }
-	character_event = { id = lahmia.210 }
-	}
-	}
-	}
+		option = {
+			name = EXCELLENT
+			prestige = 25
+			if = {
+				limit = { 
+					NOT = { intrigue = 30 }
+				}
+				random_list = {
+					95 = { }
+					5 = { change_intrigue = 1 }
+				}
+			}
+			FROM = { 
+				add_trait = vampire_lahmian_visible
+				set_graphical_culture = lahmian_vampire
+				set_variable = { which = khornefavor value = 0 }
+				set_variable = { which = nurglefavor value = 0 }
+				set_variable = { which = slaaneshfavor value = 0 }
+				set_variable = { which = tzeentchfavor value = 0 }
+				set_variable = { which = "khorne_favor" value = 0 }
+				set_variable = { which = "nurgle_favor" value = 0 }
+				set_variable = { which = "slaanesh_favor" value = 0 }
+				set_variable = { which = "tzeentch_favor" value = 0 }
+				clr_character_flag = hidden_tzeentch_cultist3
+				clr_character_flag = hidden_tzeentch_cultist2
+				clr_character_flag = hidden_tzeentch_cultist
+				clr_character_flag = hidden_nurgle_cultist3
+				clr_character_flag = hidden_nurgle_cultist2
+				clr_character_flag = hidden_nurgle_cultist
+				clr_character_flag = hidden_khorne_cultist3
+				clr_character_flag = hidden_khorne_cultist2
+				clr_character_flag = hidden_khorne_cultist
+				clr_character_flag = hidden_slaanesh_cultist3
+				clr_character_flag = hidden_slaanesh_cultist2
+				clr_character_flag = hidden_slaanesh_cultist
+				clr_character_flag = hidden_undivided_cultist3
+				clr_character_flag = hidden_undivided_cultist2
+				clr_character_flag = hidden_undivided_cultist
 
+				remove_spouse = yes
+				religion = vampiric
+				culture = lahmian
+				dynasty = ROOT
+
+				recalc_succession = yes
+			}
+
+			any_playable_ruler = {
+				limit = { trait = lahmian_queen }
+				FROM = { set_mother = PREV }
+			}
+
+			if = {
+				limit = {
+					NOT = { trait = lahmian_queen }
+				}
+				any_playable_ruler = {
+					limit = { trait = lahmian_queen }
+					character_event = { id = lahmia.210 }
+				}
+			}
+		}
 	}
 
 
