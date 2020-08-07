@@ -1077,10 +1077,7 @@ claim_on_liege = {
 							tier = emperor
 						}
 	#					is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -1097,22 +1094,6 @@ claim_on_liege = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -1423,10 +1404,7 @@ claim_on_liege_plot = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -1443,22 +1421,6 @@ claim_on_liege_plot = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -1979,10 +1941,7 @@ other_claim_on_liege = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -1999,22 +1958,6 @@ other_claim_on_liege = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -2591,10 +2534,7 @@ change_seniority_succession_law = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -2611,22 +2551,6 @@ change_seniority_succession_law = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -2835,10 +2759,7 @@ change_primogeniture_succession_law = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -2855,22 +2776,6 @@ change_primogeniture_succession_law = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -3073,10 +2978,7 @@ change_feudal_elective_succession_law = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -3093,22 +2995,6 @@ change_feudal_elective_succession_law = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -7261,10 +7147,7 @@ bid_for_independence = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -7281,22 +7164,6 @@ bid_for_independence = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -7466,10 +7333,7 @@ depose_liege = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -7486,22 +7350,6 @@ depose_liege = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -7651,10 +7499,7 @@ overthrow_ruler = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -7671,22 +7516,6 @@ overthrow_ruler = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_2
 					}
 				}
 			}
@@ -7882,10 +7711,7 @@ overthrow_ruler_no_calls = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -7902,22 +7728,6 @@ overthrow_ruler_no_calls = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_2
 					}
 				}
 			}
@@ -8058,10 +7868,7 @@ change_gavelkind_succession_law = {
 								tier = emperor
 							}
 		#					is_titular = no
-							NOR = {
-								has_law = crown_authority_0
-								has_law = imperial_crown_authority_0
-							}
+							NOT = { has_law = crown_authority_0 }
 						}
 						if = {
 							limit = { has_law = crown_authority_1 }
@@ -8078,22 +7885,6 @@ change_gavelkind_succession_law = {
 						if = {
 							limit = { has_law = crown_authority_4 }
 							add_law = crown_authority_3
-						}
-						if = {
-							limit = { has_law = imperial_crown_authority_1 }
-							add_law = imperial_crown_authority_0
-						}
-						if = {
-							limit = { has_law = imperial_crown_authority_2 }
-							add_law = imperial_crown_authority_1
-						}
-						if = {
-							limit = { has_law = imperial_crown_authority_3 }
-							add_law = imperial_crown_authority_2
-						}
-						if = {
-							limit = { has_law = imperial_crown_authority_4 }
-							add_law = imperial_crown_authority_3
 						}
 					}
 				}
@@ -8238,10 +8029,6 @@ lower_crown_authority_law = {
 			has_law = crown_authority_2
 			has_law = crown_authority_3
 			has_law = crown_authority_4
-			has_law = imperial_crown_authority_1
-			has_law = imperial_crown_authority_2
-			has_law = imperial_crown_authority_3
-			has_law = imperial_crown_authority_4
 		}
 	}
 
@@ -8318,22 +8105,6 @@ lower_crown_authority_law = {
 		if = {
 			limit = { has_law = crown_authority_4 }
 			add_law_w_cooldown = crown_authority_3
-		}
-		if = {
-			limit = { has_law = imperial_crown_authority_1 }
-			add_law_w_cooldown = imperial_crown_authority_0
-		}
-		if = {
-			limit = { has_law = imperial_crown_authority_2 }
-			add_law_w_cooldown = imperial_crown_authority_1
-		}
-		if = {
-			limit = { has_law = imperial_crown_authority_3 }
-			add_law_w_cooldown = imperial_crown_authority_2
-		}
-		if = {
-			limit = { has_law = imperial_crown_authority_4 }
-			add_law_w_cooldown = imperial_crown_authority_3
 		}
 	}
 
@@ -9121,10 +8892,7 @@ weaken_vassal_plot = {
 							tier = emperor
 						}
 						#is_titular = no
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -9141,22 +8909,6 @@ weaken_vassal_plot = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}
@@ -10034,10 +9786,7 @@ cb_faction_independence = {
 							tier = king
 							tier = emperor
 						}
-						NOR = {
-							has_law = crown_authority_0
-							has_law = imperial_crown_authority_0
-						}
+						NOT = { has_law = crown_authority_0 }
 					}
 					if = {
 						limit = { has_law = crown_authority_1 }
@@ -10054,22 +9803,6 @@ cb_faction_independence = {
 					if = {
 						limit = { has_law = crown_authority_4 }
 						add_law = crown_authority_3
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_1 }
-						add_law = imperial_crown_authority_0
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_2 }
-						add_law = imperial_crown_authority_1
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_3 }
-						add_law = imperial_crown_authority_2
-					}
-					if = {
-						limit = { has_law = imperial_crown_authority_4 }
-						add_law = imperial_crown_authority_3
 					}
 				}
 			}

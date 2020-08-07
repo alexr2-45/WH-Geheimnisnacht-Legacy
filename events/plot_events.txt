@@ -1684,22 +1684,6 @@ letter_event = {
 					limit = { has_law = crown_authority_4 }
 					add_law_w_cooldown = crown_authority_3
 				}
-				if = {
-					limit = { has_law = imperial_crown_authority_1 }
-					add_law_w_cooldown = imperial_crown_authority_0
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_2 }
-					add_law_w_cooldown = imperial_crown_authority_1
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_3 }
-					add_law_w_cooldown = imperial_crown_authority_2
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_4 }
-					add_law_w_cooldown = imperial_crown_authority_3
-				}
 			}
 		}
 
@@ -2295,22 +2279,6 @@ letter_event = {
 				if = {
 					limit = { has_law = crown_authority_4 }
 					add_law_w_cooldown = crown_authority_3
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_1 }
-					add_law_w_cooldown = imperial_crown_authority_0
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_2 }
-					add_law_w_cooldown = imperial_crown_authority_1
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_3 }
-					add_law_w_cooldown = imperial_crown_authority_2
-				}
-				if = {
-					limit = { has_law = imperial_crown_authority_4 }
-					add_law_w_cooldown = imperial_crown_authority_3
 				}
 			}
 		}
